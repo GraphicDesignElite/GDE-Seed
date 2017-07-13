@@ -1,0 +1,49 @@
+
+@mixin g_Button($background, $color){
+    @include border-top-radius(2rem);
+    @include border-right-radius(2rem);
+    @include border-bottom-radius(2rem);
+    @include border-left-radius(2rem);
+    background-image:  linear-gradient(lighten( $background, 5% ), $background);
+    background-size: 100%;
+    cursor: pointer;
+    display: inline-block;
+    color:$color;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    margin-top:20px;
+    position: relative;
+    z-index: 100;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.24);
+    &:before {
+        background-image: linear-gradient($background, darken( $background, 5% ));
+        border-radius: inherit;
+        content: '';    
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0; left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: opacity 0.3s;
+    } 
+    &:hover {
+        text-decoration: none;
+        color:$color;
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        &:before {
+            opacity: 1;
+        }
+    }
+    &:active, &:focus {
+        text-decoration: none;
+        background: darken( $background, 5% );
+        color: $color;
+        box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.27);
+    }
+    &:active:before, &:focus:before {
+        display:none; 
+    }
+}

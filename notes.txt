@@ -1,3 +1,3 @@
 Run > Gulp. Enjoy!
 
-Nunjucks
+Nunjucks - templates from pages are compiled to -> compiled, and then minified and moved into the dist folder.

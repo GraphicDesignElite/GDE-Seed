@@ -1,33 +1,14 @@
-// Variables
+// Vendor
 @import "core/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bourbon/app/assets/stylesheets/bourbon";
+
+// Local
+@import "core/mixins";
+@import "core/helpers";
+@import "core/layout";
+@import "core/buttons";
+@import "core/modules";
 
 
 
-// Objects
-// -------
-// e.g. - @import "objects/button";
-
-// User Interface
-// --------------
-// e.g. - @import "ui/button";
-
-// Layout
-// ------
-// e.g. - @import "layout/homepage";
-
-// Animation
-// ---------
-// e.g. - @import "animation/hero";
-
-// Temp
-// ----
-
-#powered-by-rusic {
-  border: 0;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  background-image: url(#{"{{ 'powered_by_rusic.png' | image_url }}"});
-  width: 200px;
-  height: 21px;
-}

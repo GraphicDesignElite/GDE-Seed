@@ -1,0 +1,35 @@
+html{
+  font-size:$font-size;
+}
+html, body {
+  height: 100%;
+}
+body{
+  font-family: $body-font;
+  background:$dark-blue;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  font-family: $heading-font;
+}
+h2,h3,h4,h5{
+  font-family: $subheading-font;
+}
+
+h1{
+  &.-light{
+    color:$white;
+  }
+  &.-blue{
+    color:$dark-blue;
+  }
+}
+footer{
+  background:$black;
+  color:$white;
+  padding: $pad-regular 0px;
+}
+
+
+

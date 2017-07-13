@@ -1,0 +1,11 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Portfolio - Design and Web Development Samples" %}
+{% set meta_description = "Graphic Design and Web Development Experts" %}
+{% set activePage = 'portfolio' %}
+
+{% extends "layout.nunjucks" %}
+
+
+{% block content %}
+<h1>Portfolio</h1>
+{% endblock %} 

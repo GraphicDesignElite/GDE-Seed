@@ -1,0 +1,6 @@
+.orange-button{
+    @include g_Button($light-orange, $white);
+}
+.blue-button{
+    @include g_Button($light-blue, $white);
+}
