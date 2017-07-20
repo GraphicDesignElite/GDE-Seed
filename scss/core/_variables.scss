@@ -11,5 +11,9 @@ $dark-orange:#e04c0b;
 
 $pad-regular: 1rem;
 
-$navbar-inverse-active-color:$light-orange;
-$navbar-inverse-hover-color: #fff;
+$navbar-brand-padding-y: .55rem; 
+$nav-link-padding: $pad-regular *1.5;
+$navbar-inverse-color: inherit;
+$navbar-inverse-hover-color: inherit;
+$navbar-inverse-active-color: $light-orange;
+$navbar-inverse-hover-color: inherit;

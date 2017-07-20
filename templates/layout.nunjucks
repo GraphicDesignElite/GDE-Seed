@@ -20,9 +20,8 @@
             <![endif]-->
 
             <!-- Add your site or application content here -->
-            {% block content %}
+            {% block content %}{% endblock %}
             
-            {% endblock %}
         </div>
         {% include "components/footer.nunjucks" %}
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

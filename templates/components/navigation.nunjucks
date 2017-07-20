@@ -1,14 +1,19 @@
-<nav id="main-navigation" class="navbar navbar-toggleable-md navbar-inverse">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+<nav id="main-navigation" class="navbar navbar-toggleable-sm navbar-inverse">
+    <div class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <a class="navbar-brand" href="#">Navbar</a>
+    <div class="pad">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </div>
+    <a class="navbar-brand" href="/">Navbar</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item {%if activePage == 'home' %} active {% endif %}">
-                <a class="nav-link" href="/#">Home {%if activePage == 'home' %} <span class="sr-only">(current)</span> {% endif %}</a>
+                <a class="nav-link" href="/">Home {%if activePage == 'home' %} <span class="sr-only">(current)</span> {% endif %}</a>
             </li>
             <li class="nav-item {%if activePage == 'services' %} active {% endif %}">
                 <a class="nav-link" href="/services/">Services {%if activePage == 'services' %} <span class="sr-only">(current)</span> {% endif %}</a>
